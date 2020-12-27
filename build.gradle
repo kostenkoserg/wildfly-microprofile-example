@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'war'
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    providedCompile "javax:javaee-api:8.0"
+    compile group: 'org.eclipse.microprofile.metrics', name: 'microprofile-metrics-api', version: '2.3'
+    compile group: 'io.smallrye', name: 'smallrye-metrics', version: '2.4.0'
+
+}
+
